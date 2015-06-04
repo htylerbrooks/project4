@@ -1,0 +1,26 @@
+body {
+  margin: 0px;
+}
+
+#bg_containter {
+  height: 300px;
+  overflow: hidden;
+}
+
+#bg{
+  width: 100%;
+  height: 800px;
+}
+
+#disableclick{
+  position: absolute;
+  height: 100px;
+  width: 100%;
+}
+
+#content{
+  position:absolute;
+  top: 0px;
+  padding: 30px;
+  color: #FFF;
+}

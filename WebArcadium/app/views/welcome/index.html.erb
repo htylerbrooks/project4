@@ -1,0 +1,15 @@
+<%= stylesheet_link_tag "welcome" %>
+
+
+
+<div id="bg_container">
+  <iframe id ="bg" src="https://www.youtube.com/embed/qclbxYkhw3k?list=PLh2BcvadArQYQXpjDtJccL_uvQ0_ZBzTD&iv_load_policy=3&autoplay=1&controls=0&loop=1&showinfo=0&modestbranding=1&disablekb=1&enablejsapi=1" frameborder="0"></iframe>
+</div>
+
+
+<div id="content">
+  <h1>WebArcadium</h1>
+  <%= button_to 'Tic-Tac-Toe', tic_tac_toe_game_path, :method => :get %>
+  <%= button_to 'Connect Four', connect_four_game_path, :method => :get %>
+</div>
+</div>

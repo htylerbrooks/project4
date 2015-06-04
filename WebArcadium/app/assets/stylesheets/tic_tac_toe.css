@@ -1,0 +1,33 @@
+.Square {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  font-size: 500%;
+  text-align: center;
+  color: blue;
+}
+
+#message {
+  text-align: center;
+  font-size: 125%;
+  margin-bottom: 10px;
+}
+
+#button_wrapper {
+  padding-bottom: 25px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#board {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center
+}
