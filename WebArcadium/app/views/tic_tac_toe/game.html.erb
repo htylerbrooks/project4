@@ -1,6 +1,12 @@
 <%= javascript_include_tag "tic_tac_toe" %>
 <%= stylesheet_link_tag "tic_tac_toe" %>
 
+<header id= "nav_bar">
+  <%= link_to "Back",root_path %>
+  <%= link_to "Play Connect Four", connect_four_game_path %>
+</header>
+
+
 <h1>Tic-Tac-Toe</h1>
 
 
@@ -36,6 +42,6 @@
   X Number of Wins!
 </div>
 
-<div id="y_win">
-  Y Number of Wins!
+<div id="o_win">
+  O Number of Wins!
 </div>

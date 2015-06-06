@@ -1,2 +1,73 @@
-<h1>ConnectFour#game</h1>
-<p>Find me in app/views/connect_four/game.html.erb</p>
+<%= javascript_include_tag "connect_four" %>
+<%= stylesheet_link_tag "connect_four" %>
+
+<header id= "nav_bar">
+  <%= link_to "Back", root_path %>
+  <%= link_to "Play Tic-Tac-Toe", tic_tac_toe_game_path %>
+</header>
+
+
+<h1>Connect Four</h1>
+
+<div id="button_wrapper">
+  <button type="submit" id="new-game">New Game</button>
+</div>
+
+<div id="gameboard_container">
+  <div id="0" class="column">
+    <div id="0" class="piece"></div>
+    <div id="1" class="piece"></div>
+    <div id="2" class="piece"></div>
+    <div id="3" class="piece"></div>
+    <div id="4" class="piece"></div>
+    <div id="5" class="piece"></div>
+  </div>
+  <div id="1" class="column">
+    <div id="6" class="piece"></div>
+    <div id="7" class="piece"></div>
+    <div id="8" class="piece"></div>
+    <div id="9" class="piece"></div>
+    <div id="10" class="piece"></div>
+    <div id="11" class="piece"></div>
+  </div>
+  <div id="2" class="column">
+    <div id="12" class="piece"></div>
+    <div id="13" class="piece"></div>
+    <div id="14" class="piece"></div>
+    <div id="15" class="piece"></div>
+    <div id="16" class="piece"></div>
+    <div id="17" class="piece"></div>
+  </div>
+  <div id="3" class="column">
+    <div id="18" class="piece"></div>
+    <div id="19" class="piece"></div>
+    <div id="20" class="piece"></div>
+    <div id="21" class="piece"></div>
+    <div id="22" class="piece"></div>
+    <div id="23" class="piece"></div>
+  </div>
+  <div id="4" class="column">
+    <div id="24" class="piece"></div>
+    <div id="25" class="piece"></div>
+    <div id="26" class="piece"></div>
+    <div id="27" class="piece"></div>
+    <div id="28" class="piece"></div>
+    <div id="39" class="piece"></div>
+  </div>
+  <div id="5" class="column">
+    <div id="30" class="piece"></div>
+    <div id="31" class="piece"></div>
+    <div id="32" class="piece"></div>
+    <div id="33" class="piece"></div>
+    <div id="34" class="piece"></div>
+    <div id="35" class="piece"></div>
+  </div>
+  <div id="6" class="column">
+    <div id="36" class="piece"></div>
+    <div id="37" class="piece"></div>
+    <div id="38" class="piece"></div>
+    <div id="39" class="piece"></div>
+    <div id="40" class="piece"></div>
+    <div id="41" class="piece"></div>
+  </div>
+</div>

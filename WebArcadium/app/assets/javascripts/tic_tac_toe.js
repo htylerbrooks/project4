@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  console.log("Lets do this!")
 
   $("#new-game").click(function(){
     startGame();
@@ -9,12 +10,11 @@ $(document).ready(function(){
     nextMove(this);
   });
 
-
   startGame();
 });
 
   var x_win = 0;
-  var y_win = 0;
+  var o_win = 0;
 // Start Game / Set message /Click Squares to Change Text
 
 function startGame(){
@@ -57,10 +57,10 @@ function switchTurn() {
     document.winner = document.turn;
     if(document.winner == "X"){
       x_win++;
-      $("#x_win").text(x_win);
+      $("#x_win").text("X Win(s): " + x_win);
     }else{
-      y_win++;
-      $("#y_win").text(y_win);
+      o_win++;
+      $("#o_win").text("O Win(s): " + o_win);
     }
   }else if (document.turn === "X"){
     document.turn = "O";
@@ -73,21 +73,21 @@ function switchTurn() {
 
 function checkForWinner(move){
   var result = false;
-  if (checkRow(1,2,3, move) ||
-  checkRow(4,5,6, move) ||
-  checkRow(7,8,9, move) ||
-  checkRow(1,4,7, move) ||
-  checkRow(2,5,8, move) ||
-  checkRow(3,6,9, move) ||
-  checkRow(1,5,9, move) ||
-  checkRow(3,5,7, move)) {
+  if (checkRowsAndDiagonals(1,2,3, move) ||
+  checkRowsAndDiagonals(4,5,6, move) ||
+  checkRowsAndDiagonals(7,8,9, move) ||
+  checkRowsAndDiagonals(1,4,7, move) ||
+  checkRowsAndDiagonals(2,5,8, move) ||
+  checkRowsAndDiagonals(3,6,9, move) ||
+  checkRowsAndDiagonals(1,5,9, move) ||
+  checkRowsAndDiagonals(3,5,7, move)) {
     result = true;
   }
   return result;
 }
 
 // Check's Row for Winning Condition
-function checkRow(a, b, c, move){
+function checkRowsAndDiagonals(a, b, c, move){
   var result = false;
   if (getBox(a) == move && getBox(b) == move && getBox(c)==move){
     result = true;

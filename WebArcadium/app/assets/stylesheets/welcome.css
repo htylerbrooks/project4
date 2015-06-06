@@ -4,7 +4,7 @@ body {
 
 #bg_containter {
   height: 300px;
-  overflow: hidden;
+  background-size: cover;
 }
 
 #bg{
@@ -12,15 +12,13 @@ body {
   height: 800px;
 }
 
-#disableclick{
-  position: absolute;
-  height: 100px;
-  width: 100%;
-}
-
 #content{
   position:absolute;
   top: 0px;
   padding: 30px;
   color: #FFF;
+}
+
+#buttons{
+  display: inline-block;
 }
