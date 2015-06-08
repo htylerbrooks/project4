@@ -1,5 +1,5 @@
-// Much of this code was done via a code along with instructor Timothy James at
-// the University of Pittsburgh. Personal changes made include: seperating the
+// Much of this code was done via a code along with instructor Timothy James.
+// Personal changes made include: seperating the
 // Javascript code from the html page. Using jQuery Selectors. Adding a counter
 // for wins for O and X. All styling and associated links.
 
